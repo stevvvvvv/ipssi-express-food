@@ -6,22 +6,22 @@ Ce projet est réalisé **en solo**, avec l'accord du professeur (échange par m
 
 ### Lundi 28/09 — Cadrage & mise en place
 
-- [ ] Lecture du cahier des charges, choix de la stack (Django + DRF + MongoEngine + React)
-- [ ] Création du repo GitHub et du squelette backend/front
-- [ ] Modélisation des collections MongoDB (Plat, Commande, Livreur)
-- [ ] Création du cluster MongoDB Atlas + utilisateurs (owner et read-only)
+- [x] Lecture du cahier des charges, choix de la stack (Django + DRF + MongoEngine + React)
+- [x] Création du repo GitHub et du squelette backend/front
+- [x] Modélisation des collections MongoDB (Plat, Commande, Livreur)
+- [x] Création du cluster MongoDB Atlas + utilisateurs (owner et read-only)
 
 ### Mardi 29/09 — Backend
 
-- [ ] Authentification (inscription/connexion, rôles client et livreur)
-- [ ] API du menu du jour
-- [ ] API commandes : création, calcul du total et des frais de livraison, assignation automatique d'un livreur
-- [ ] API livreurs et suivi de commande
+- [x] Authentification (inscription/connexion, rôles client et livreur)
+- [x] API du menu du jour
+- [x] API commandes : création, calcul du total et des frais de livraison, assignation automatique d'un livreur
+- [x] API livreurs et suivi de commande
 
 ### Mercredi 30/09 — Frontend
 
-- [ ] Intégration des pages React (menu, panier, commande, suivi, espace livreur)
-- [ ] Connexion du front à l'API
+- [x] Intégration des pages React (menu, panier, commande, suivi, espace livreur)
+- [x] Connexion du front à l'API
 - [ ] Vérification du responsive (mobile/tablette)
 
 ### Jeudi 01/10 — Finalisation (objectif : projet terminé le soir même)
