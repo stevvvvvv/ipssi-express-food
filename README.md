@@ -1,15 +1,12 @@
 # IPSSI Express Food
 
-Projet annuel MIA4 (NAT MIA4 28.1) — réalisé en solo par Steven Jansen, avec l'accord du professeur.
+Projet annuel MIA4 (NAT MIA4 28.1), fait en solo avec l'accord du professeur — j'ai obtenu de présenter la soutenance sous forme de vidéo enregistrée plutôt qu'en direct.
 
-Livraison de plats faits maison en moins de 20 minutes par des livreurs à vélo.
+L'idée : une appli de livraison de plats faits maison, livrés en moins de 20 minutes par des livreurs à vélo.
 
 ## Stack technique
 
-- **Backend** : Django + Django REST Framework
-- **Authentification** : Django auth (User + Profil client/livreur), base SQLite
-- **Données métier** (plats, commandes, livreurs) : MongoDB Atlas via MongoEngine (ODM)
-- **Front** : React (Vite) + Tailwind CSS
+J'ai choisi une architecture un peu hybride : Django + Django REST Framework pour le backend, avec l'authentification classique de Django (User + un profil client/livreur) sur SQLite. Pour les données métier en revanche — les plats, les commandes, les livreurs — j'utilise MongoDB Atlas via l'ODM MongoEngine, plus adapté à des données qui changent souvent (statut d'une commande, position d'un livreur). Le front est en React (Vite) avec Tailwind CSS.
 
 ## Lancer le projet en local
 
@@ -41,18 +38,17 @@ Le site est disponible sur `http://localhost:5173`.
 
 ## Créer un compte livreur
 
-Un livreur est un `User` Django classique dont le `Profile.role = "livreur"` (à créer depuis l'admin `/admin/`, ou via l'API register avec `role=livreur`). Un document MongoDB `Livreur` (statut, position) est créé automatiquement à la création du profil.
+Un livreur est simplement un `User` Django dont le `Profile.role = "livreur"` (à créer depuis l'admin `/admin/`, ou via l'API register avec `role=livreur`). Ça déclenche la création automatique d'un document MongoDB `Livreur` (statut, position) via un signal Django.
 
 ## Organisation du travail
 
-Projet réalisé en solo (accord du professeur) : la répartition de tâches habituellement faite via un board Trello est remplacée par une répartition du temps et de l'organisation personnelle, détaillée dans [`ORGANISATION.md`](./ORGANISATION.md).
+Comme je suis seul sur ce projet, la répartition de tâches habituellement demandée (à faire / en cours / fait entre membres d'un groupe) n'avait pas vraiment de sens. Je l'ai remplacée par une répartition de mon temps de travail sur la semaine, détaillée dans [`ORGANISATION.md`](./ORGANISATION.md).
 
-- Support de présentation (slides) : *à compléter*
-- Application déployée : *à compléter une fois le déploiement fait*
+- Support de présentation (slides) : [IPSSI FOOD EXPRESS Slides - Steven JANSEN.pdf](./IPSSI%20FOOD%20EXPRESS%20Slides%20-%20Steven%20JANSEN.pdf)
 
 ## RGPD
 
-Les seules données personnelles collectées sont celles nécessaires au service : nom, téléphone et adresse du client pour la livraison, nom et position du livreur pour le suivi de commande. Ces données ne sont pas partagées avec des tiers et servent uniquement à l'exécution de la commande.
+Je ne collecte que ce qui est nécessaire au service : nom, téléphone et adresse du client pour la livraison, nom et position du livreur pour le suivi de commande. Rien n'est partagé avec des tiers, ces données servent uniquement à faire fonctionner la livraison.
 
 ## Arborescence
 
@@ -61,4 +57,5 @@ express-food/
   backend/          # Django + DRF + MongoEngine
   frontend/         # React + Vite + Tailwind
   ORGANISATION.md   # planning et suivi d'avancement (solo)
+  IPSSI FOOD EXPRESS Slides - Steven JANSEN.pdf   # support de présentation
 ```
