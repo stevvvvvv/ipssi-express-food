@@ -1,6 +1,6 @@
 # Organisation du projet
 
-Ce projet est réalisé **en solo**, avec l'accord du professeur (échange par mail préalable). En l'absence de groupe, la répartition des tâches habituellement demandée (à faire / en cours / fait entre membres) est remplacée par une **répartition du temps et de l'organisation personnelle**, détaillée et tenue à jour ci-dessous au fil de la semaine.
+Ce projet est réalisé **en solitaire**. En l'absence de groupe, la répartition des tâches habituellement demandée (à faire / en cours / fait entre membres) est remplacée par une **répartition du temps et de l'organisation personnelle**, détaillée et tenue à jour ci-dessous au fil de la semaine.
 
 ## Planning
 
@@ -22,17 +22,17 @@ Ce projet est réalisé **en solo**, avec l'accord du professeur (échange par m
 
 - [x] Intégration des pages React (menu, panier, commande, suivi, espace livreur)
 - [x] Connexion du front à l'API
-- [ ] Vérification du responsive (mobile/tablette)
+- [x] Vérification du responsive (mobile/tablette)
 
 ### Jeudi 01/10 — Finalisation (objectif : projet terminé le soir même)
 
-- [ ] Matin : corrections, mentions RGPD, nettoyage du code
-- [ ] Après-midi : déploiement de l'application, rédaction du README, préparation des slides
-- [ ] Soir : enregistrement et envoi de la vidéo de soutenance au professeur — **projet finalisé**
+- [x] Matin : corrections, mentions RGPD, nettoyage du code
+- [x] Après-midi : déploiement de l'application, rédaction du README, préparation des slides
+- [x] Soir : enregistrement et envoi de la vidéo de soutenance au professeur — **projet finalisé**
 
 ### Vendredi 02/10, avant 14h00
 
-- [ ] Dépôt final sur la plateforme IPSSI (lien du repo GitHub + lien des slides) — aucun développement ce jour-là, la vidéo ayant déjà été envoyée la veille
+- [x] Dépôt final sur la plateforme IPSSI (lien du repo GitHub + lien des slides) — aucun développement ce jour-là, la vidéo ayant déjà été envoyée la veille
 
 ## Suivi d'avancement
 
