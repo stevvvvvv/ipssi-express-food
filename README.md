@@ -1,6 +1,6 @@
 # IPSSI Express Food
 
-Projet annuel MIA4 (NAT MIA4 28.1), fait en solo avec l'accord du professeur — j'ai obtenu de présenter la soutenance sous forme de vidéo enregistrée plutôt qu'en direct.
+Projet annuel MIA4 (NAT MIA4 28.1)
 
 L'idée : une appli de livraison de plats faits maison, livrés en moins de 20 minutes par des livreurs à vélo.
 
